@@ -1,4 +1,5 @@
 #Curtain.js
+Requires jQuery ;)
 ##About
 This is a jQuery script to display content for comback intersitials. This leverages the [Page Visibility API that is provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
 
