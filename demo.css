@@ -1,0 +1,8 @@
+.place-kitten {
+  background-image: url('http://placekitten.com/1000/900');
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
