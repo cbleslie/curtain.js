@@ -12,7 +12,6 @@ Curtain.prototype.start = function () {
     visibilityChange = "visibilitychange";
   } else if (typeof document.mozHidden !== "undefined") {
     //Old Mozilla
-    console.log('Old Moz');
     hidden = "mozHidden";
     visibilityChange = "mozvisibilitychange";
   } else if (typeof document.msHidden !== "undefined") {
@@ -54,5 +53,5 @@ Curtain.prototype.start = function () {
   //watch for change in visibilty
   document.addEventListener(visibilityChange, this.wipe, false);
 };
-var curtain = new Curtain('red');
+var curtain = new Curtain();
 curtain.start();
