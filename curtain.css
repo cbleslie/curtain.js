@@ -1,6 +1,6 @@
 .curtain {
   /* Setup */
-  position: absolute;
+  position: absolute; /* Remove from flow */
   top: 0;
   left: 0;
   height: 100%;
