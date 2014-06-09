@@ -1,8 +1,7 @@
 var hidden,
     visibilityChange;
 
-var Curtain = function (hex) {
-  this.hex = hex;
+var Curtain = function () {
 };
 
 Curtain.prototype.start = function () {
@@ -55,8 +54,5 @@ Curtain.prototype.start = function () {
   //watch for change in visibilty
   document.addEventListener(visibilityChange, this.wipe, false);
 };
-
-console.log('curtain is loaded');
-var test = new Curtain('red');
-test.start();
-console.log(test);
+var curtain = new Curtain('red');
+curtain.start();
