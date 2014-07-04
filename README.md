@@ -1,7 +1,9 @@
 #Curtain.js
 Requires jQuery ;)
 ##About
-This is a jQuery script to display content for comback intersitials. This leverages the [Page Visibility API that is provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
+This is a jQuery script to display content for comback intersitials.
+This leverages the [Page Visibility API that is provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
+All decent browsers. If your browser dosen't support this API, time to upgrade.
 
 ##Setup
 Include `curtain.js` and `curtain.css` in your project.
@@ -23,9 +25,9 @@ So the most basic document would look something like this:
 	    <link href="../curtain.css" rel="stylesheet">
 	  </head>
 	  <body>
-	    <div class="curtain">
+	    <section class="curtain" curtain-delay="0.5s" curtain-duration="1s">
 	      <!-- curtain content, Make sure you actually have *something* here -->
-	    </div>
+	    </section>
 	    <div>
 	      <!-- page content -->
 	    </div>
@@ -34,12 +36,12 @@ So the most basic document would look something like this:
 	  </body>
 	</html>
 
-This script is self instating, so it should just run on load. That may change.
+This script is self instating, so it should just run on load. That may change. It may not. Let me know.
 
 ##UX Considerations
-This isn't really intended for pages/apps with referential materials. I mean, *I* would be pissed comeing back and forth, and having to wait. So be sure you use this sparingly so as not to piss off your users. Speaking of pissing off users, it *could* also be used for interstitial ads, but I sure hope not. To do so, you would need to alter the timeouts, which is a feature I intend to add as soon as I have a free day or two.
+This isn't really intended for pages/apps with referential materials.
+I mean, *I* would be pissed coming back and forth, and having to wait.
+So be sure you use this sparingly so as not to piss off your users.
 
-##TODO
-- [ ] Remove auto initializaion, and provide ablity to pass variables
-  - [ ] Specifiy timeouts
-  - [ ] Specifiy transition times and/or speeds
+Speaking of pissing off users, it *could* also be used for interstitial ads, but I sure hope not.
+Shit. I know you will. Oh well. Enjoy it.
