@@ -8,13 +8,13 @@ All decent browsers. If your browser dosen't support this API, time to upgrade.
 ##Setup
 Include `curtain.js` and `curtain.css` in your project.
 `curtain.css` goes in your `<head>`, like so:
-
-    <link href="bower_components/curtain.js/curtain.css" rel="stylesheet">
-
+```HTML
+<link href="bower_components/curtain.js/curtain.css" rel="stylesheet">
+```
 Then, include `curtain.js` in your *hot* `<body>`, ideally near the closing tag:
-
-    <script src="bower_components/curtain.js/curtain.js"></script>
-
+```HTML
+<script src="bower_components/curtain.js/curtain.js"></script>
+```
 Then after your openining `<body>` tag, place a `<div>` with the Curtain class:
 
 So the most basic document would look something like this:
