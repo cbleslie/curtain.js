@@ -18,24 +18,24 @@ Then, include `curtain.js` in your *hot* `<body>`, ideally near the closing tag:
 Then after your openining `<body>` tag, place a `<div>` with the Curtain class:
 
 So the most basic document would look something like this:
-
-	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <link href="../curtain.css" rel="stylesheet">
-	  </head>
-	  <body>
-	    <section class="curtain" curtain-delay="0.5s" curtain-duration="1s">
-	      <!-- curtain content, Make sure you actually have *something* here -->
-	    </section>
-	    <div>
-	      <!-- page content -->
-	    </div>
-	    <script src="bower_components/jquery/dist/jquery.js"></script>
-	    <script src="bower_components/curtain.js/curtain.js"></script>
-	  </body>
-	</html>
-
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="../curtain.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="curtain" curtain-delay="0.5s" curtain-duration="1s">
+      <!-- curtain content, Make sure you actually have *something* here -->
+    </section>
+    <div>
+      <!-- page content -->
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/curtain.js/curtain.js"></script>
+  </body>
+</html>
+```
 This script is self instating, so it should just run on load. That may change. It may not. Let me know.
 
 ##UX Considerations
