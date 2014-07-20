@@ -3,8 +3,6 @@ Requires jQuery ;)
 ##About
 Display content for comback intersitials.
 This leverages the [Page Visibility API that is provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
-All decent browsers. If your browser dosen't support this API, time to upgrade.
-
 ##Setup
 Include `curtain.js` and `curtain.css` in your project.
 `curtain.css` goes in your `<head>`, like so:
