@@ -1,16 +1,16 @@
 {
   "name": "curtain",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "authors": [
     "Cameron Leslie <cameronleslie@gmail.com>"
   ],
   "description": "If you're gonna come back, let me give you some zazz.",
   "main": "curtain.js",
   "keywords": [
-    "attract",
+    "ad",
+    "ads",
     "jquery",
-    "curtain",
-    "reveal"
+    "curtain"
   ],
   "license": "MIT",
   "ignore": [
