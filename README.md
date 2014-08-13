@@ -26,7 +26,7 @@ Then, include `curtain.js` in your *hot* `<body>`, ideally near the closing tag 
 ```HTML
 <script src="bower_components/curtain.js/dist/js/curtain.dist.min.js"></script>
 ```
-Then after your openining `<body>` tag, place a `<div>` with the Curtain class:
+Then after your openining `<body>` tag, place a `<div>` or more appropreately a `<section>` tag with the Curtain class:
 
 So the most basic document would look something like this:
 ```HTML
@@ -58,7 +58,7 @@ The delay controls how long the curtain is closed. You must provide the value in
 curtain-delay="3s"
 ```
 ####Duration
-The delay controls how long it takes the curtain to open. You must provide the value in the "```number```s" format. If none is provided, the curtain will, again, inherit it's defaults.
+The duration controls how long it takes the curtain to open. You must provide the value in the "```number```s" format. If none is provided, the curtain will, again, inherit it's defaults.
 ```HTML
 curtain-duration="1s"
 ```
