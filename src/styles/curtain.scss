@@ -1,13 +1,14 @@
-.curtain {
-  /* Setup */
-  position: absolute; /* Remove from flow */
-  top: 0;
+$background-color: rgba(255, 255, 255, 1);
+
+[curtain] {
+  background-color: $background-color;
+  height: 100vh;
   left: 0;
-  height: 100%;
   overflow: hidden;
-  background-color: #FFFFFF;
-  /* Let the content be swept */
+  position: absolute;
+  top: 0;
+  transition: all 0;
   white-space: nowrap;
-  /* Inital State before jQuery hits it. */
   width: 0;
+  z-index: 1;
 }

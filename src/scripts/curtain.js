@@ -1,17 +1,18 @@
 var CURTAIN = (function () {
   //Setup the public object
-  var curtain = {};
-  //Public Vars
-  curtain.hidden = '';
-  curtain.visibilityChange = '';
-  curtain.hiddenInterval = '';
-  //setting up defaults.
-  curtain.delaySetting = '1s';
-  curtain.durationSetting = '0.8s';
-  curtain.timerSetting = true;
-  curtain.curtainIdentifier = '.curtain';
-  curtain.exitIdentifier = '.curtain-exit';
-  curtain.countIdentifier = '.curtain-count';
+  var curtain = {
+    //Public Vars
+    hidden: '',
+    visibilityChange: '',
+    hiddenInterval: '',
+    //setting up defaults.
+    delaySetting :'1s',
+    durationSetting: '0.8s',
+    timerSetting: true,
+    curtainIdentifier: '[curtain]', //Using an attr here
+    exitIdentifier: '.curtain-exit',
+    countIdentifier: '.curtain-count',
+  };
   //Public Functions
   //Check browser for API variations.
   curtain.checkBrowser = function () {
@@ -42,9 +43,7 @@ var CURTAIN = (function () {
       curtain.hiddenInterval = '';
     }
     $(curtain.curtainIdentifier).css({
-      'transition': 'all 0s',
       'transition-delay': '0s',
-      'z-index': '1',
       'width': '100%',
       'transform':'translateX(0px)'
     });
