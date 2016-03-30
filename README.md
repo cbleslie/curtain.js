@@ -1,15 +1,15 @@
 #Curtain.js
 
 ##About
-Display content for comback intersitials.
-This leverages the [Page Visibility API that is provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
+Display content for comeback interstitials.
+This leverages the [Page Visibility API that are provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
 
 ##Install
 Use Bower.
 ```
 bower install curtain.js
 ```
-or if you want to add it directly to your bower.json...
+or if you want to add it directly to your `bower.json`...
 ```
 bower install curtain.js --save
 ```
@@ -26,7 +26,7 @@ Then, include `curtain.js` in your *hot* `<body>`, ideally near the closing tag 
 ```HTML
 <script src="bower_components/curtain.js/dist/js/curtain.dist.min.js"></script>
 ```
-Then after your openining `<body>` tag, place a `<div>` with the Curtain class:
+Then after your **opening** `<body>` tag, place a `<div>` with the `curtain` attribute:
 
 So the most basic document would look something like this:
 ```HTML
@@ -36,7 +36,7 @@ So the most basic document would look something like this:
     <link href="bower_components/curtain.js/dist/css/curtain.min.css" rel="stylesheet">
   </head>
   <body>
-    <section class="curtain" curtain-delay="0.5s" curtain-duration="1s" timer="true">
+    <section curtain curtain-delay="0.5s" curtain-duration="1s" timer="true">
       <button class="curtain-exit">Exit</button>
       <span class="curtain-count"></span>
     </section>
@@ -79,4 +79,4 @@ The option to close the curtain. Just add a link or, *preferably* a button, with
 **Note:** You could, in theory, bind this to any element you want, just using the class.
 
 ##UX Considerations
-The key here is to get the duration and delay tuned correctly **especially** if you start to use it for ads. There is a sweetspot for this sort of thing. The hardest part is finding it.
+The key here is to get the duration and delay tuned correctly **especially** if you start to use it for ads. There is a sweet-spot for this sort of thing. The hardest part is finding it.
