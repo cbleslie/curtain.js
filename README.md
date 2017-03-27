@@ -1,10 +1,10 @@
-#Curtain.js
+# Curtain.js
 
-##About
+## About
 Display content for comback intersitials.
 This leverages the [Page Visibility API that is provided by all *decently* modern browsers](http://caniuse.com/#feat=pagevisibility).
 
-##Install
+## Install
 Use Bower.
 ```
 bower install curtain.js
@@ -14,7 +14,7 @@ or if you want to add it directly to your bower.json...
 bower install curtain.js --save
 ```
 
-##Setup
+## Setup
 This requires jQuery.
 
 Include `curtain.js` and `curtain.css` in your project.
@@ -50,19 +50,19 @@ So the most basic document would look something like this:
 ```
 This script is self instating, so it should just run on load. That may change. It may not. Let me know.
 
-###Configuring the Curtain
+### Configuring the Curtain
 Let me give you a quick rundown.
-####Delay
+#### Delay
 The delay controls how long the curtain is closed. You must provide the value in the "```number```s" format. If none is provided, the curtain will inherit it's defaults.
 ```HTML
 curtain-delay="3s"
 ```
-####Duration
+#### Duration
 The duration controls how long it takes the curtain to open. You must provide the value in the "```number```s" format. If none is provided, the curtain will, again, inherit it's defaults.
 ```HTML
 curtain-duration="1s"
 ```
-####Timer
+#### Timer
 Timer settings controls the display of the countdown timer. ```true``` it will display, ```false``` it will be hidden, even if you've setup the markup container for the timer.
 ```HTML
 timer="true"
@@ -71,12 +71,12 @@ The second requirement for the timer to work properly is to have the timer conta
 ```HTML
 <span class="curtain-count"><!-- Timer gets injected here. --></span>
 ```
-####Exit
+#### Exit
 The option to close the curtain. Just add a link or, *preferably* a button, within the curtain, with this markup...
 ```HTML
 <button class="curtain-exit"><!-- Awesome Exit Text --></button>
 ```
 **Note:** You could, in theory, bind this to any element you want, just using the class.
 
-##UX Considerations
+## UX Considerations
 The key here is to get the duration and delay tuned correctly **especially** if you start to use it for ads. There is a sweetspot for this sort of thing. The hardest part is finding it.
